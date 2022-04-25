@@ -1,5 +1,6 @@
 package com.dbms.onlineairportmanagement.model;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,10 +14,16 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "User")
-public class User {
+@Table(name = "airplanemodel")
+public class AirplaneModel {
 
     @Id
-    @Column(name = "name")
-    private String name;
+    @Column(name = "Model_no")
+    int model_no;
+
+    @Column(name = "capacity")
+    int capacity;
+
+    @Column(name = "weight")
+    int weight;
 }

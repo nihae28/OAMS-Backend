@@ -9,14 +9,17 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "User")
-public class User {
+@Data
+@Table(name = "plane")
+public class Plane {
 
     @Id
-    @Column(name = "name")
-    private String name;
+    @Column(name = "Reg_no")
+    int reg_no;
+
+    @Column(name = "Model_no")
+    int model_no;
 }

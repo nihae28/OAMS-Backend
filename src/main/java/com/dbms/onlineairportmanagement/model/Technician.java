@@ -13,10 +13,10 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "User")
-public class User {
+@Table(name = "Technician")
+public class Technician {
 
     @Id
-    @Column(name = "name")
-    private String name;
+    @Column(name = "Ssn")
+    String Ssn;
 }

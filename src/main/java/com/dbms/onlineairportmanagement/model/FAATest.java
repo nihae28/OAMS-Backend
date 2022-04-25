@@ -13,10 +13,16 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "User")
-public class User {
+@Table(name = "faa_test")
+public class FAATest {
 
     @Id
-    @Column(name = "name")
-    private String name;
+    @Column(name = "FAA_no")
+    String faa_no;
+
+    @Column(name = "Tname")
+    String tname;
+
+    @Column(name = "max_score")
+    int max_score;
 }

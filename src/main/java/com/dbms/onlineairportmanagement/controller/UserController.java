@@ -5,7 +5,10 @@ import com.dbms.onlineairportmanagement.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
@@ -16,7 +19,7 @@ public class UserController {
     private UserRepository userRepository;
 
     @PostMapping("/add/{name}")
-    public ResponseEntity<HttpStatus> saveUser(@PathVariable String name){
+    public ResponseEntity<HttpStatus> saveUser(@PathVariable String name) {
         User u = new User(name);
         userRepository.save(u);
         return ResponseEntity.ok(HttpStatus.NO_CONTENT);
