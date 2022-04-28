@@ -14,12 +14,12 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "airplanemodel")
+@Table(name = "model")
 public class AirplaneModel {
 
     @Id
     @Column(name = "Model_no")
-    int model_no;
+    int modelNo;
 
     @Column(name = "capacity")
     int capacity;

@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -23,5 +24,5 @@ public class TrafficController {
     String ssn;
 
     @Column(name = "exam_date")
-    Date exam_date;
+    LocalDateTime exam_date;
 }

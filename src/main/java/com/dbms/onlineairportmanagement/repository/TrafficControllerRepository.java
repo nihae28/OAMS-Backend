@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TrafficControllerRepository extends CrudRepository<TrafficController, String> {
+    abstract TrafficController getTrafficControllerBySsn(String ssn);
 }

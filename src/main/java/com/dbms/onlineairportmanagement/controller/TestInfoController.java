@@ -1,5 +1,5 @@
 package com.dbms.onlineairportmanagement.controller;
-import com.dbms.onlineairportmanagement.repository.Test_infoRepository;
+import com.dbms.onlineairportmanagement.repository.TestInfoRepository;
 import com.dbms.onlineairportmanagement.model.Test_info;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class TestInfoController {
 
     @Autowired
-    private Test_infoRepository test_info;
+    private TestInfoRepository test_info;
 
     @GetMapping("/gettests")
     public List<Test_info> getAllTestInfo(){

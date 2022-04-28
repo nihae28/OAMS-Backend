@@ -18,8 +18,8 @@ public class Plane {
 
     @Id
     @Column(name = "Reg_no")
-    int reg_no;
+    int regNo;
 
     @Column(name = "Model_no")
-    int model_no;
+    int modelNo;
 }

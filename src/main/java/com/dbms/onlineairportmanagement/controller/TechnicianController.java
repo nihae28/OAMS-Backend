@@ -1,7 +1,7 @@
 package com.dbms.onlineairportmanagement.controller;
 
 import com.dbms.onlineairportmanagement.model.Technician;
-import com.dbms.onlineairportmanagement.model.TestInfo;
+import com.dbms.onlineairportmanagement.model.Test_info;
 import com.dbms.onlineairportmanagement.repository.TechnicianRepository;
 import com.dbms.onlineairportmanagement.repository.TestInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,7 +55,7 @@ public class TechnicianController {
 
     @GetMapping("/getAssignedTests/{ssn}")
     @ResponseBody
-    public List<TestInfo> getTestsAssigned(@PathVariable String ssn) {
+    public List<Test_info> getTestsAssigned(@PathVariable String ssn) {
 
         return StreamSupport.stream(testInfoRepository.findAll().spliterator(), false)
                 .filter(testInfo -> testInfo.getSsn().equals(ssn))
