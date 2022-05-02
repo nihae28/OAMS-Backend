@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface AirplaneModelRepository extends CrudRepository<AirplaneModel, Integer> {
 
     //@Query("Select model from AirplaneModel model where model.modelNo = :modelNo")
-    //AirplaneModel findByModelNo(int modelNo);
+    AirplaneModel findByModelNo(int modelNo);
 }
