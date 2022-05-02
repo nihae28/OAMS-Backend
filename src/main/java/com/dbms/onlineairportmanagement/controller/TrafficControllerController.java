@@ -10,6 +10,7 @@ import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/trafficController")
 public class TrafficControllerController {

@@ -18,11 +18,11 @@ public class FAATest {
 
     @Id
     @Column(name = "FAA_no")
-    String faa_no;
+    String faaNo;
 
     @Column(name = "Tname")
-    String tname;
+    String tName;
 
     @Column(name = "max_score")
-    int max_score;
+    int maxScore;
 }

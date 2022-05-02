@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/airplane_models")
 public class AirplaneModelsController {

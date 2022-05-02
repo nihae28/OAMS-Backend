@@ -18,7 +18,7 @@ public class Expert {
 
     @Id
     @Column(name = "Model_no")
-    int model_no;
+    int modelNo;
 
     @Column(name = "ssn")
     String ssn;

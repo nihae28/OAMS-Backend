@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
-
+@CrossOrigin(origins = "*")
 @RequestMapping("/traffic-controller")
 @RestController
 public class TrafficControllerApi {

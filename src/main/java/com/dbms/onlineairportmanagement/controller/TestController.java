@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/tests-controller")
 public class TestController {
@@ -28,6 +29,7 @@ public class TestController {
     @ResponseBody
     public ResponseEntity insertModel(@RequestBody FAATest test) {
         try {
+            System.out.println("i am inserting" +test.getFaaNo());
             faaTestRepository.save(test);
         } catch (Exception e) {
             System.out.print(e.getStackTrace());

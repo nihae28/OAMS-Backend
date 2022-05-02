@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/employee-controller")
 public class EmployeeController {

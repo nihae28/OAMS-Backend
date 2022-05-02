@@ -24,7 +24,7 @@ public class Employee {
     private String emailId;
 
     @Column(name = "EName")
-    private String EName;
+    private String eName;
 
     @Column(name = "Address")
     private String address;
@@ -33,7 +33,7 @@ public class Employee {
     private Long salary;
 
     @Column(name = "Union_mem_no")
-    private String union_mem_no;
+    private String unionNo;
 
     @Column(name = "Phone_no")
     private long phone;
